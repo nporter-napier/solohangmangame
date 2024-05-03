@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solo Hangman Game</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- scripts for wordlist, form game mode and to close window -->
+    <script  src="easy_wordlist.js"  defer></script>
+    <script src="easy_script.js"  defer></script>
+    <script language="javascript" type="text/javascript">
+  	function exitGame() {
+   	if (confirm("Are you sure you want to exit the Solo Hangman Game?")) {
+	window.open('','parent','');
+	console.log("Window is being closed...");
+     	window.close();
+	}
+  	}
+	</script>
+</head>
+ <body>
+
+    <div class="main">
+	
+      <div class="game">
+        <div class="left">
+          <img class="img" src="images/hangman-gallows.svg" />
+          <h1>SOLO HANGMAN GAME</h1>
+        </div>
+        <div class="right">
+	  <header>
+		<a href="index.html">
+		<button type="button">Go Home</button></a>
+		<button onclick="exitGame()">Exit Game</button>
+
+ 		
+				
+        <h1>YOU ARE IN EASY MODE</h1>
+ 	</header>
+	
+          <ul class="word-display"></ul>
+          <h4>
+            Hint:Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Laborum, ipsum!
+          </h4>
+          <p>
+            Incorrect guesses:
+            <span class="chance" style="color: green">0/6</span>
+          </p>
+          <div class="keyboard"></div>
+        </div>
+      </div>
+      <div class="GameEnded">
+        <img class="gameendedImg" src="images/lose.gif" />
+        <h3>Game Over!</h3>
+        <h6>
+          The Correct Word Was:<span class="answer" style="color: green"
+            >Jazz</span
+          >
+        </h6>
+        <button onclick="location.reload()">PLAY AGAIN</button>
+      </div>
+	
+    </div>
+ 	
+</body>
+
+ </html>
+

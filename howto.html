@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solo Hangman Game</title>
+    <link rel="stylesheet" href="style.css">
+	<script language="javascript" type="text/javascript">
+  	function exitGame() {
+   	if (confirm("Are you sure you want to exit the Solo Hangman Game?")) {
+	window.open('','parent','');
+	console.log("Window is being closed...");
+     	window.close();
+	}
+  	}
+	</script>
+
+</head>
+<body>
+
+
+    <header>
+        <div class="main">
+             <div class="game">
+		<div class="left"> 
+                
+                <img class="img" src="images/hangman-rightfoot.svg" />
+		<h1>SOLO HANGMAN GAME</h1>
+            	</div>
+           	<div class="right">
+		<header>
+                    <h2>How to Play</h2>
+		    <h3>Easy as 1-2-3-4</h3>
+                </header>
+                <p>
+		1.User selects a game mode. <br>
+		2.User starts a new game and is presented with a word clue and word to guess represent by a blank space for each letter.<br>
+		3.User attempts to guess the word letter by letter.<br>
+		4.Game continues until the user either guesses all the letters correctly or the “Stick Man” is hung by the seven-step process by guessing incorrect letters, whichever 			comes first.<br>
+		</p>
+                <nav>
+                    
+			<p>Start Playing!<br>
+                	Or learn more by clicking one of the links.<br></p>
+			 </a>
+			<!--Return Home-->
+                        <a href="index.html"> 
+                            <button type="button">Choose your Game Mode</button>
+                        </a>
+			</a>
+			<!--Game Modes Explained-->
+                        <a href="gamemodes.html"> 
+                            <button type="button">GameModesExplained</button>
+                        </a>
+
+
+
+                </nav>
+                <input type="button" value="Exit Game" onclick="exitGame();">
+            </div>
+        </div>
+    </header>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solo Hangman Game</title>
+    <link rel="stylesheet" href="style.css">
+	<script language="javascript" type="text/javascript">
+  	function exitGame() {
+   	if (confirm("Are you sure you want to exit the Solo Hangman Game?")) {
+	window.open('','parent','');
+	console.log("Window is being closed...");
+     	window.close();
+	}
+  	}
+	</script>
+
+</head>
+<body>
+
+
+    <header>
+        <div class="main">
+             <div class="game">
+		<div class="left"> 
+                
+                <img class="img" src="images/hangman-rightfoot.svg" />
+		<h1>SOLO HANGMAN GAME</h1>
+            	</div>
+           	<div class="right">
+		<header>
+                    <h2>Game Modes Explained</h2>
+		    <h3>3 Game Modes</h3>
+                </header>
+                <p>1. Kids mode - game with words that are from a children’s dictionary for children up to 12 years old and 7 chances to guess.<br>
+		2. Easy mode - game with mix of words for kids and adults, 7 chances to guess before being hanged!<br>
+		3. Adult mode - game with standard dictionary and with 7 chances to guess before being hanged!<br></p>
+                <nav>
+                    
+			<p>Start Playing!<br>
+                	Or learn more by clicking one of the links.<br></p>
+			 </a>
+			<!--Return Home-->
+                        <a href="index.html"> 
+                            <button type="button">Choose your Game Mode</button>
+                        </a>
+			</a>
+			<!--How to Play Help-->
+                        <a href="howto.html"> 
+                            <button type="button">How to Play Solo Hangman</button>
+                        </a>
+
+
+
+                </nav>
+                <input type="button" value="Exit Game" onclick="exitGame();">
+            </div>
+        </div>
+    </header>
+</body>
+</html>

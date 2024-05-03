@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solo Hangman Game</title>
+    <link rel="stylesheet" href="style.css">
+	<script language="javascript" type="text/javascript">
+  	function exitGame() {
+   	if (confirm("Are you sure you want to exit the Solo Hangman Game?")) {
+	window.open('','parent','');
+	console.log("Window is being closed...");
+     	window.close();
+	}
+  	}
+	</script>
+
+</head>
+<body>
+
+
+    <header>
+        <div class="main">
+             <div class="game">
+		<div class="left"> 
+                
+                <img class="img" src="images/hangman-rightfoot.svg" />
+		<h1>SOLO HANGMAN GAME</h1>
+            	</div>
+           	<div class="right">
+		<header>
+                    <h2>Welcome to Solo Hangman Game!</h2>
+                </header>
+                <p>Your classic hangman game, a way to<br>
+                kill time. Choose Game Mode.<br></p>
+                <nav>
+                    <!--establishing game modes-->
+                       <div class ="button"> <a href="kids_mode.html">
+                            <button type="button">Kids</button>
+                        </a>
+                        <a href="easy_mode.html">
+                            <button type="button">Easy</button>
+                        </a>
+			<!--hard game mode-->
+                        <a href="hard_mode.html"> 
+                            <button type="button">Hard</button>
+                        </a>
+                   	</div>
+			<p>Need Help?<br>
+                	Choose a below option for help.<br></p>
+			 </a>
+			<!--Game Modes Help-->
+                        <a href="gamemodes.html"> 
+                            <button type="button">Game Modes Explained</button>
+                        </a>
+			</a>
+			<!--How to Play Help-->
+                        <a href="howto.html"> 
+                            <button type="button">How to Play Solo Hangman</button>
+                        </a>
+
+
+
+                </nav>
+                <input type="button" value="Exit Game" onclick="exitGame();">
+	    
+                </div>
+        </div>
+    </header>
+</body>
+</html>
